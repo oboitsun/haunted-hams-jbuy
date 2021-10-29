@@ -40,14 +40,22 @@ export default function WelcomeTo({
         key={5}
         className="w-full flex flex-col custom-grid gap-2 xl:gap-4 "
       >
-        <a href="#">
+        <div
+          onClick={() => {
+            setShowPopup(true);
+          }}
+        >
           <BuyButton />
-        </a>
+        </div>
 
         <a href="https://discord.com">
           <button className="btn join-discord w-full"> Join The Discord</button>
         </a>
-        <img className="block " src="/imgs/dfinity.png" alt="dfinity blockchain" />
+        <img
+          className="block max-w-min mx-auto lg:mx-0 "
+          src="/imgs/dfinity.png"
+          alt="dfinity blockchain"
+        />
       </motion.div>
     </motion.div>
   );

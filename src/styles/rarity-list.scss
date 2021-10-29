@@ -1,0 +1,39 @@
+@import "./variables.scss";
+.rarity-list-table {
+  .cell {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    place-self: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1;
+  }
+  .cell-heading {
+    background: #000;
+    color: white;
+  }
+  .rarity {
+    color: white;
+  }
+  .common {
+    background-color: #6fcd93;
+  }
+  .uncomm {
+    background-color: #61c8f7;
+  }
+  .rare {
+    background-color: #ba92f1;
+  }
+  .ultra {
+    background-color: #f0cb64;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

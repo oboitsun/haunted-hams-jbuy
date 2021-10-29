@@ -1,0 +1,13 @@
+@import "./variables.scss";
+.popup {
+  width: 100%;
+  max-width: 864px;
+  background: #f1ecdf;
+  max-height: 60vh;
+  overflow-y: scroll;
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

@@ -13,6 +13,7 @@ import AboutHamsters from "./components/AboutHamsters";
 import Roadmap from "./components/Roadmap";
 import Ghost from "./components/Ghost";
 import Web from "./components/Web";
+import Roadmap2 from "./components/Roadmap2";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,6 +22,7 @@ export default function App() {
     if (e.target.scrollingElement.scrollTop < 10) setScrolled(false);
     if (e.target.scrollingElement.scrollTop >= 10) setScrolled(true);
   };
+
   //scrolling listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -59,7 +61,8 @@ export default function App() {
         <EndlessHamsters />
         <Web />
       </div>
-      <Roadmap />
+      <Roadmap2 />
+      {/* <Roadmap /> */}
       <Team />
 
       <FAQ />

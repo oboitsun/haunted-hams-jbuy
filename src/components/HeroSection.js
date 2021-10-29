@@ -31,7 +31,7 @@ export default function HeroSection({
         />
         <motion.img
           style={{ x: yPosAnim, opacity }}
-          className="big-frank  "
+          className="big-frank  pointer-events-none"
           src="/imgs/franken-big.png"
           alt="big ham"
         />

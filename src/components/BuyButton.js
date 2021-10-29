@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/buy-button.scss";
 export default function BuyButton() {
   return (
-    <div className="buy-button flex items-center">
+    <div className="buy-button flex items-center justify-center">
       <img className="block h-auto mr-1" src="/imgs/entrepot.png" alt="entrepot" />
       <div className="flex flex-col">
         <p className="buy-now">Buy now on</p>
