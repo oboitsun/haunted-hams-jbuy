@@ -55,7 +55,7 @@ export default function FAQ() {
             ))}
           </div>
         </div>
-        <div className="devil">
+        <div className="devil pointer-events-none">
           <motion.img
             initial={{ x: 0, y: 0 }}
             animate={{ x: [0, 15, 0], y: [0, -24, 25, 0] }}
