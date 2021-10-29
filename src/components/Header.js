@@ -50,15 +50,9 @@ export default function Header({
             </Anchor>
           ))}
           <Socials />
-          {rendered && (
-            <ConnectWallet
-              showPopup={showPopup}
-              setShowPopup={setShowPopup}
-              header
-              setUserAddress={setUserAddress}
-              userAddress={userAddress}
-            />
-          )}
+          <a href="#">
+            <button className="btn w-full">Buy</button>
+          </a>
         </div>
       </div>
     </div>

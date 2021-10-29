@@ -61,7 +61,9 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
         </motion.div>
       ))}
       <motion.div key={11} className="">
-        <ConnectWallet />
+        <a href="#">
+          <button className="btn w-full">Buy</button>
+        </a>
       </motion.div>
       <motion.div key={12} className="  ">
         <Socials big modal />{" "}

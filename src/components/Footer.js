@@ -49,13 +49,9 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
             <div className="lg:block hidden ">
               <Socials />
             </div>
-            <ConnectWallet
-              header
-              showPopup={showPopup}
-              setShowPopup={setShowPopup}
-              setUserAddress={setUserAddress}
-              userAddress={userAddress}
-            />
+            <a href="#">
+              <button className="btn w-full">Buy</button>
+            </a>
           </div>
         </div>
       </div>
