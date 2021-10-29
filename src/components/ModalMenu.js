@@ -68,6 +68,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
       <motion.div key={12} className="  ">
         <Socials big modal />{" "}
       </motion.div>
+      <img className="block " src="/imgs/dfinity.png" alt="dfinity blockchain" />
     </motion.div>
   );
 }

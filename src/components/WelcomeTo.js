@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Timer from "./Timer";
 // import dynamic from "next/dynamic";
 import ConnectWallet from "./ConnectWallet";
+import BuyButton from "./BuyButton";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function WelcomeTo({
   setShowPopup,
@@ -40,12 +41,13 @@ export default function WelcomeTo({
         className="w-full flex flex-col custom-grid gap-2 xl:gap-4 "
       >
         <a href="#">
-          <button className="btn w-full">Buy</button>
+          <BuyButton />
         </a>
 
         <a href="https://discord.com">
           <button className="btn join-discord w-full"> Join The Discord</button>
         </a>
+        <img className="block " src="/imgs/dfinity.png" alt="dfinity blockchain" />
       </motion.div>
     </motion.div>
   );

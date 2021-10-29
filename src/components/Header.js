@@ -6,6 +6,7 @@ import "../styles/header.scss";
 import Button from "./Button";
 import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
+import BuyButton from "./BuyButton";
 
 export default function Header({
   showPopup,
@@ -40,7 +41,7 @@ export default function Header({
     <div id="header" className={` ${scrolled ? "bg-black py-3 shadow-lg" : "py-7"}`}>
       <div className="my-container justify-between flex items-center">
         <div>
-          <Logo wide={false} />
+          <Logo wide={true} />
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center">
@@ -51,7 +52,7 @@ export default function Header({
           ))}
           <Socials />
           <a href="#">
-            <button className="btn w-full">Buy</button>
+            <BuyButton />
           </a>
         </div>
       </div>

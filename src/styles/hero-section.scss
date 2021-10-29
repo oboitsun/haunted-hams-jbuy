@@ -58,9 +58,10 @@
     padding-top: 0;
 
     .custom-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 0.2fr;
-      place-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
     .big-frank {
       display: block;

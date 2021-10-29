@@ -5,6 +5,7 @@ import { Link as Anchor } from "react-scroll";
 
 import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
+import BuyButton from "./BuyButton";
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function Footer({ showPopup, setShowPopup, userAddress, setUserAddress }) {
   const links = [
@@ -33,6 +34,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
             <div className="lg:hidden pt-5">
               {" "}
               <Socials big />
+              <img className="block " src="/imgs/dfinity.png" alt="dfinity blockchain" />
             </div>
 
             <p className="text-gray-400 lg:hidden text-center py-5">
@@ -50,7 +52,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
               <Socials />
             </div>
             <a href="#">
-              <button className="btn w-full">Buy</button>
+              <BuyButton />
             </a>
           </div>
         </div>
