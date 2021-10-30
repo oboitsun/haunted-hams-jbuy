@@ -3,7 +3,13 @@ pipelines:
     main:
       - step:
           name: build and install
-          image: node:latest
+          image: node:14.17.3
           script:
-            - yarn install
-            - yarn build
+            - npm install
+          artifacts:
+            - build/**
+      - step:
+          name: build
+          image: node:14.17.3
+          script:
+            - npm run build
