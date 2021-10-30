@@ -40,11 +40,7 @@ export default function WelcomeTo({
         key={5}
         className="w-full flex flex-col custom-grid gap-2 xl:gap-4 "
       >
-        <div
-          onClick={() => {
-            setShowPopup(true);
-          }}
-        >
+        <div>
           <BuyButton />
         </div>
 
@@ -57,6 +53,14 @@ export default function WelcomeTo({
           alt="dfinity blockchain"
         />
       </motion.div>
+      <div
+        onClick={() => {
+          setShowPopup(true);
+        }}
+        className="w-full text-white text-center hover:underline cursor-pointer pt-5"
+      >
+        Check out the Rarity Traits!
+      </div>
     </motion.div>
   );
 }

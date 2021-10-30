@@ -5,32 +5,31 @@ import Heading from "./Heading";
 const roadmap = [
   {
     direction: "ltr",
-    month: "JULY ",
+    month: "SEP ",
     text: `The vision of Haunted Hamsters begins, and preparation for the project is
     underway.`,
   },
+
   {
     direction: "ltr",
-    month: "JULY ",
-    text: `The vision of Haunted Hamsters begins, and preparation for the project is
-    underway.`,
-  },
-  {
-    direction: "ltr",
-    month: "AUG ",
+    month: "OCT ",
     text: `Development, design is underway for the project and the first set of
     Hamsters start to be minted!`,
   },
   {
     direction: "rtl",
-    month: "OCT ",
-    text: `The final amount of Hamsters are minted and are now available on the
-    marketplace.`,
+    month: "NOV ",
+    text: `Trading on the secondary marketplace begins - users can buy and sell Haunted Hamsters there.`,
   },
   {
     direction: "rtl",
-    month: "NOV ",
-    text: `Future development, airdrops, rewards and potential game is in the works.`,
+    month: "Dec ",
+    text: `Hamsters are spooking the ICP blockchain!`,
+  },
+  {
+    direction: "ltr",
+    month: "Jan ",
+    text: `Potential future development, airdrops, rewards for holders and potential game (if demand) is in the works.`,
   },
 ];
 export default function Roadmap2() {

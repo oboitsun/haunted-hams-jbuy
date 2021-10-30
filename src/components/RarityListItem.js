@@ -56,14 +56,16 @@ export default function RarityListItem({ qstn, answr, category, list, toggleList
         style={{ maxHeight: `${setHeight}` }}
         className=" transition-all overflow-hidden "
       >
-        <div className="grid grid-cols-5 gap-1 rarity-list-table">
+        <div className="grid grid-cols-3 gap-1 rarity-list-table">
           <div className="cell cell-heading">Item</div>
           <div className="cell cell-heading">Mint Amount</div>
-          <div className="cell cell-heading">Percentage</div>
-          <div className="cell cell-heading">Decimal</div>
+
           <div className="cell cell-heading">Rarity</div>
           {answr.map((item, i) => {
-            const row = Object.keys(item).map((key) => cellTemplate(key, item[key]));
+            const row = Object.keys(item).map((key) => {
+              if (key !== "percent" && key !== "decimal")
+                return cellTemplate(key, item[key]);
+            });
 
             return [...row];
           })}
