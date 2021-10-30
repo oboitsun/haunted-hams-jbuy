@@ -1,8 +1,9 @@
 pipelines:
   branches:
     main:
-      -step:
-        name: build and install
-        image: node:latest
-        script: -yarn install
-          -yarn build
+      - step:
+          name: build and install
+          image: node:latest
+          script:
+            - yarn install
+            - yarn build
