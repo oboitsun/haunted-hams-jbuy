@@ -1,0 +1,8 @@
+pipelines:
+  branches:
+    master:
+      -step:
+        name: build and install
+        image: node:latest
+        script: -yarn install
+          -yarn build
