@@ -50,6 +50,6 @@
     "autoprefixer": "^9",
     "ic-stoic-identity": "^2.0.0",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "@tailwindcss/postcss7-compat": "^2.2.7"
   }
 }
