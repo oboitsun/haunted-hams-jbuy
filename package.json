@@ -18,7 +18,8 @@
     "react-intersection-observer": "^8.32.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "scripts": {
     "start": "craco start",
