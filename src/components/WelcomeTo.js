@@ -38,20 +38,21 @@ export default function WelcomeTo({
       <motion.div
         variants={item}
         key={5}
-        className="w-full flex flex-col custom-grid gap-2 xl:gap-4 "
+        className="w-full flex flex-col  gap-2 xl:gap-4 "
       >
-        <div>
-          <BuyButton />
+        <div className="w-full lg:w-4/5 mx-auto pb-5">
+          <BuyButton big />
         </div>
-
-        <a href="https://discord.com">
-          <button className="btn join-discord w-full"> Join The Discord</button>
-        </a>
-        <img
-          className="block max-w-min mx-auto lg:mx-0 "
-          src="/imgs/dfinity.png"
-          alt="dfinity blockchain"
-        />
+        <div className="flex items-center mx-auto">
+          <a href="https://discord.com">
+            <button className="btn join-discord w-full"> Join The Discord</button>
+          </a>
+          <img
+            className="block max-w-min ml-5  lg:ml-4 "
+            src="/imgs/dfinity.png"
+            alt="dfinity blockchain"
+          />
+        </div>
       </motion.div>
       <div
         onClick={() => {

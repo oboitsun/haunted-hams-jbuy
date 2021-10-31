@@ -1,7 +1,7 @@
 @import "./variables.scss";
 .buy-button {
   padding: 5px 10px;
-
+  height: 100%;
   box-sizing: content-box;
   background: #d88535;
   border: 1px solid #ffc064;
@@ -12,9 +12,20 @@
     font-weight: 700;
     line-height: 1;
   }
+
   @media (min-width: 1024px) {
   }
 
   @media (min-width: 1280px) {
+  }
+}
+.big {
+  font-size: 48px;
+  line-height: 1;
+  .buy-now {
+    color: #ffc064;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
   }
 }

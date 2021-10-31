@@ -5,6 +5,7 @@ import "../styles/modal-menu.scss";
 import { Link as Anchor } from "react-scroll";
 import Socials from "./Socials";
 import ConnectWallet from "./ConnectWallet";
+import BuyButton from "./BuyButton";
 
 export default function ModalMenu({ showMenu, setShowMenu }) {
   const links = [
@@ -61,9 +62,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
         </motion.div>
       ))}
       <motion.div key={11} className="">
-        <a href="#">
-          <button className="btn w-full">Buy</button>
-        </a>
+        <BuyButton />
       </motion.div>
       <motion.div key={12} className="  ">
         <Socials big modal />{" "}

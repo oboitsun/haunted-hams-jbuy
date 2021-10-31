@@ -1,13 +1,16 @@
 import React from "react";
 import "../styles/buy-button.scss";
-export default function BuyButton() {
+export default function BuyButton({ big }) {
   return (
-    <div className="buy-button flex items-center justify-center">
+    <a
+      className={`buy-button flex items-center justify-center ${big ? "big" : ""}`}
+      href="https://entrepot.app/sale/hauntedhamsters"
+    >
       <img className="block h-auto mr-1" src="/imgs/entrepot.png" alt="entrepot" />
       <div className="flex flex-col">
         <p className="buy-now">Buy now on</p>
-        <p className="font-fright text-2xl tracking-wider font-medium">Entrepot</p>
+        <p className="font-fright  tracking-wider font-medium">Entrepot</p>
       </div>
-    </div>
+    </a>
   );
 }

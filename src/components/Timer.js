@@ -3,7 +3,7 @@ import TimerCountItem from "./TimerCountItem";
 
 import { calculateTimeLeft } from "./utils";
 export default function Timer() {
-  const dayX = new Date(Date.UTC(2021, 9, 31, 4, 0, 0)).getTime();
+  const dayX = new Date(Date.UTC(2021, 10, 1, 0, 0, 0)).getTime();
   const today = Date.now();
 
   const [timeLeft, setTimeLeft] = useState({
