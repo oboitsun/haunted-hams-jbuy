@@ -12,7 +12,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
     { href: "about-us", text: "About Us" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "market", text: "Market" },
+    // { href: "market", text: "Market" },
     { href: "faq", text: "FAQ" },
   ];
 
