@@ -7,22 +7,22 @@ import Heading from "./Heading";
 const team = [
   {
     src: "/imgs/ham4.png",
-    name: "Fuzz",
+    name: "Spookz",
     position: "CEO",
   },
   {
     src: "/imgs/ham5.png",
-    name: "Brownie",
+    name: "Creepz",
     position: "Marketing",
   },
   {
     src: "/imgs/ham1.png",
-    name: "Ice Cup",
+    name: "Frightz",
     position: "Developer",
   },
   {
     src: "/imgs/ham7.png",
-    name: "Breeze",
+    name: "Nervz",
     position: "Designer",
   },
 ];

@@ -14,6 +14,7 @@ import Roadmap from "./components/Roadmap";
 import Ghost from "./components/Ghost";
 import Web from "./components/Web";
 import Roadmap2 from "./components/Roadmap2";
+import BuyButton from "./components/BuyButton";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -66,6 +67,10 @@ export default function App() {
       <Team />
 
       <FAQ />
+
+      <div className="w-full lg:w-4/5 mx-auto pb-5">
+        <BuyButton big />
+      </div>
 
       <Footer
         showPopup={showPopup}

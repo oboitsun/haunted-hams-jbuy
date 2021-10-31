@@ -7,38 +7,24 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    qstn: "How do I buy a Haunted Hamsters?",
-    answr: `It’s simple, just press the “Connect Wallet” button, and connect with either
-  STOIC Wallet or Plug. You will then be able to “Mint” your own Haunted
-  Hamster using the “Mint Now” button. Please note there is a limit of 20
-  Haunted Hamsters per person.`,
+    qstn: "HOW DO I BUY A HAUNTED HAMSTER?",
+    answr: `You can buy a hamster by waiting for the timer to count down to 0, and then visiting the link above which will take you to the relevant “Entrepot” page to mint your Hamster.`,
   },
   {
-    qstn: "What Blockhain and technology are Haunted Hamsters on?",
-    answr: `We have minted the Haunted Hamsters on the DFINITY Internet Computer
-  blockchain, in which we believe is perfect for the project.`,
+    qstn: "WHAT CAN I DO WITH ONCE I GET MY HAUNTED HAMSTERS NFT?",
+    answr: `Once you have one of these Spooky Hamsters, you will be able to collect it in your wallet. We believe that it’s not only fun, cool artwork but there is potential in the future to turn the Haunted Hamsters into possibly a game or something larger in the future.`,
   },
   {
-    qstn: "What can I do with once I get my Haunted Hamsters NFT?",
-    answr: `At this stage you can collect it, like other NFT’s with the high possibility of
-  the value of it increasing. We believe that not only is it fun, cool artwork,
-  but there could be potential in the future to turn Haunted Hamsters into
-  potentially a game, or something even larger in the future.`,
+    qstn: "WHAT WALLET DO I NEED TO BE ABLE TO CONNECT AND BUY?",
+    answr: `You will be able to connect via Plug and Stoic on the Entrepot.app marketplace.`,
   },
   {
-    qstn: "What wallet do I need to be able to connect and buy?",
-    answr: `You can connect using STOIC Wallet or Plug Wallet at this time.`,
+    qstn: "HOW MANY HAUNTED HAMSTERS CAN I BUY?",
+    answr: `You will be able to buy as many as you can, but get in quick as we believe the price is a steal!`,
   },
   {
-    qstn: "How many Haunted Hamsters caan I buy?",
-    answr: `You can buy only 20 Haunted Hamsters per person. There will be other
-  ones available on the secondary market place in which you can buy and
-  sell your Haunted Hamsters as you wish.`,
-  },
-  {
-    qstn: `What are the plans for the future for Haunted Hamsters?`,
-    answr: `We have plans to make a potential game, donations, airdrops and rewards
-  - so stay tuned!`,
+    qstn: "WHAT ARE THE PLANS FOR THE FUTURE?",
+    answr: `We have potential plans for partnerships, future airdrops for holders and other rewards so stay tuned!`,
   },
 ];
 export default function FAQ() {
