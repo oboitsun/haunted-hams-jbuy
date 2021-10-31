@@ -44,7 +44,7 @@ export default function WelcomeTo({
           <BuyButton big />
         </div>
         <div className="flex items-center mx-auto">
-          <a href="https://discord.com">
+          <a href="https://discord.gg/DtSF7SGK">
             <button className="btn join-discord w-full"> Join The Discord</button>
           </a>
           <img
