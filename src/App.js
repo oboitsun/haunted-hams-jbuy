@@ -68,7 +68,7 @@ export default function App() {
 
       <FAQ />
 
-      <div className="w-full lg:w-4/5 mx-auto pb-5">
+      <div className="w-full lg:w-4/5 max-w-md mx-auto pb-5">
         <BuyButton big />
       </div>
 
