@@ -38,7 +38,7 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
             </div>
 
             <p className="text-gray-400 lg:hidden text-center py-5">
-              2021 © NZ Marketing Group Limited trading as Munchy. All Rights Reserved.
+              2021 © Haunted Hamsters
             </p>
           </div>
 
