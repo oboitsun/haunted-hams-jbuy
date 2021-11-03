@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+const hams = [
+  "/imgs/nft-ham1.png",
+  "/imgs/nft-ham2.png",
+  "/imgs/nft-ham3.png",
+  "/imgs/nft-ham4.png",
+  "/imgs/nft-ham5.png",
+  "/imgs/nft-ham6.png",
+  "/imgs/nft-ham7.png",
+  "/imgs/nft-ham8.png",
+];
 export default function HeroSection({
   showPopup,
   setShowPopup,
@@ -9,10 +19,12 @@ export default function HeroSection({
   setUserAddress,
 }) {
   const [currentImgBG, setCurrentImageBG] = useState(null);
+  const [currentHam, setCurrentHam] = useState(null);
   const { scrollYProgress } = useViewportScroll();
   useEffect(() => {
     console.log("rendered");
     setCurrentImageBG(Math.random() > 0.5 ? "/imgs/bg.jpg" : "/imgs/bg2.jpg");
+    setCurrentHam(hams[Math.floor(Math.random() * hams.length)]);
   }, []);
   const yPosAnim = useTransform(scrollYProgress, [0, 0.5, 1], [0, -500, -900]);
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.5], [1, 0.5, 0.0]);
@@ -35,13 +47,15 @@ export default function HeroSection({
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        <motion.img
-          style={{ x: yPosAnim, opacity }}
-          className="big-frank  pointer-events-none"
-          src="/imgs/franken-big.png"
-          alt="big ham"
-        />
-        <img className=" big-frank-mob" src="/imgs/franken-big.png" alt="big ham" />
+        {currentHam && (
+          <motion.img
+            style={{ x: yPosAnim, opacity }}
+            className="big-frank  pointer-events-none z-0"
+            src={currentHam}
+            alt="big ham"
+          />
+        )}
+        {currentHam && <img className=" big-frank-mob" src={currentHam} alt="big ham" />}
       </div>
     </motion.div>
   );
