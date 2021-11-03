@@ -58,10 +58,10 @@ export default function RaritySlider() {
   return (
     <div id="rarity-slider" className="w-full overflow-hidden">
       <Heading>Rarity</Heading>
-      <SubHeading>
+      {/* <SubHeading>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         Ipsum has been the industry's standard dummy text ever since the 1500s
-      </SubHeading>
+      </SubHeading> */}
       <div className="my-container relative overflow-hidden">
         <img id="swiper-next" src="/imgs/slider-next.svg" alt="next slide" />
         <img id="swiper-prev" src="/imgs/slider-next.svg" alt="next slide" />
