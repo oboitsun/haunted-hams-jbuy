@@ -39,12 +39,12 @@ export default function Roadmap2() {
       <div className="my-container roadmap2 hidden lg:block">
         <div className="grid  grid-cols-4 auto-rows-auto place-items-center gap-y-10">
           <div className="date-pumpkin">
-            <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+            <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
             <div className="date font-fright">{roadmap[0].month}</div>
           </div>
           <div className="horiz-bar top"></div>
           <div className="date-pumpkin">
-            <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+            <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
             <div className="date font-fright">{roadmap[1].month}</div>
           </div>
           <div className="w-full h-full relative overflow-hidden">
@@ -62,23 +62,23 @@ export default function Roadmap2() {
           <div className="empty"></div>
           <div className="legend pr-5">{roadmap[2].text}</div>
           <div className="date-pumpkin">
-            <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+            <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
             <div className="date font-fright">{roadmap[2].month}</div>
           </div>
           <div className="legend">{roadmap[4].text}</div>
           <div className="empty"></div>
           <div className="legend">{roadmap[3].text}</div>
           <div className="w-1.5 h-full bg-black relative">
-            <div className="absolute w-full h-full top-full left-0 bg-black"></div>
+            <div className="absolute w-full h-full top-2/3 left-0 bg-black"></div>
             <div className="absolute w-full h-full -top-full left-0 bg-black"></div>
           </div>
           <div className="date-pumpkin">
-            <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+            <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
             <div className="date font-fright">{roadmap[4].month}</div>
           </div>
           <div className="h-1.5 w-full bg-black rounded-full relative top-4"></div>
           <div className="date-pumpkin">
-            <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+            <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
             <div className="date font-fright">{roadmap[3].month}</div>
           </div>
           <div className="w-full h-full relative overflow-hidden">
@@ -91,7 +91,7 @@ export default function Roadmap2() {
         <div className="grid  grid-cols-1 auto-rows-auto place-items-center gap-y-1">
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
               <div className="date font-fright">{roadmap[0].month}</div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
               <div className="date font-fright">{roadmap[1].month}</div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
               <div className="date font-fright">{roadmap[2].month}</div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
               <div className="date font-fright">{roadmap[3].month}</div>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/pumpkin.png" alt="pumpkin" />
+              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
               <div className="date font-fright">{roadmap[4].month}</div>
             </div>
           </div>

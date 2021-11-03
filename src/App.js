@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ModalMenu from "./components/ModalMenu";
 import ComingSoonPopUp from "./components/ComingSoonPopUp";
-
+import RaritySlider from "./components/RaritySlider";
 import AboutHamsters from "./components/AboutHamsters";
 import Roadmap from "./components/Roadmap";
 import Ghost from "./components/Ghost";
@@ -63,6 +63,7 @@ export default function App() {
         <Web />
       </div>
       <Roadmap2 />
+      <RaritySlider />
       {/* <Roadmap /> */}
       <Team />
 

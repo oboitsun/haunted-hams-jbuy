@@ -1,0 +1,35 @@
+@import "./variables.scss";
+#rarity-slider {
+  .mySwiper {
+    width: 90%;
+    margin: 60px auto 0;
+  }
+  .swiper-slide-next,
+  .swiper-slide-prev {
+    transform: scale(0.8);
+  }
+  .swiper-slide-active {
+    transform: scale(1);
+  }
+  .swiper-slide {
+    transition: all 0.3s;
+  }
+  #swiper-next,
+  #swiper-prev {
+    position: absolute;
+    top: 60%;
+  }
+  #swiper-next {
+    right: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #swiper-prev {
+    left: 0;
+    transform: translateX(50%) translateY(-50%) rotate(180deg);
+  }
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

@@ -19,6 +19,7 @@
     "react-intersection-observer": "^8.32.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
+    "swiper": "^7.2.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "web-vitals": "^1.0.1"
   },
@@ -47,9 +48,9 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.7",
     "autoprefixer": "^9",
     "ic-stoic-identity": "^2.0.0",
-    "postcss": "^7",
-    "@tailwindcss/postcss7-compat": "^2.2.7"
+    "postcss": "^7"
   }
 }
