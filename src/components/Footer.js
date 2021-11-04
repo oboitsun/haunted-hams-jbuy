@@ -28,16 +28,20 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
     <div className="w-full py-5   bg-light-khaki b   relative z-[2] footer">
       <div className="my-container ">
         <div className="faq-divider mb-5"></div>
-        <div className="w-full justify-between flex items-center">
+        <div className="w-full lg:justify-between flex flex-col lg:flex-row items-center">
           <div className="flex flex-col items-center">
             <Logo wide={false} />
-            <div className="lg:hidden pt-5">
+            <div className="lg:hidden pt-5 mx-auto">
               {" "}
               <Socials big />
-              <img className="block " src="/imgs/dfinity.png" alt="dfinity blockchain" />
+              <img
+                className="block mx-auto pt-5"
+                src="/imgs/dfinity.png"
+                alt="dfinity blockchain"
+              />
             </div>
 
-            <p className="text-gray-400 lg:hidden text-center py-5">
+            <p className="text-gray-400 lg:hidden text-center pt-2 pb-5">
               2021 © Haunted Hamsters
             </p>
           </div>
@@ -51,9 +55,8 @@ export default function Footer({ showPopup, setShowPopup, userAddress, setUserAd
             <div className="lg:block hidden ">
               <Socials />
             </div>
-            <a href="#">
-              <BuyButton />
-            </a>
+
+            <BuyButton />
           </div>
         </div>
       </div>
