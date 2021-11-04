@@ -3,7 +3,7 @@ const cellTemplate = (type, content) => {
   return (
     <div className={`cell ${type === "rarity" ? `${type} ${content}` : `${type}`}`}>
       {type === "img" ? (
-        <img src={content} alt="type" />
+        <img className="img" src={content} alt="type" />
       ) : (
         <span className="capitalize">
           {type === "amount" && content}

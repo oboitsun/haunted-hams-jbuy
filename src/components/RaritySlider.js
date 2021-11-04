@@ -56,9 +56,9 @@ export default function RaritySlider() {
     window && window.innerWidth <= 425 && setIsMobile(true);
   }, []);
   return (
-    <div id="rarity-slider" className="w-full overflow-hidden pt-14">
+    <div id="rarity-slider" className="w-full overflow-hidden pt-10">
       <div className="my-container ">
-        <Heading>Rarity</Heading>
+        <Heading>Traits</Heading>
         {/* <SubHeading>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         Ipsum has been the industry's standard dummy text ever since the 1500s
