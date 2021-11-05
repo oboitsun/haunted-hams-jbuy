@@ -3,6 +3,7 @@ import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 const hams = [
+  "/imgs/pack.png",
   "/imgs/nft-ham1.png",
   "/imgs/nft-ham2.png",
   "/imgs/nft-ham3.png",
@@ -11,6 +12,7 @@ const hams = [
   "/imgs/nft-ham6.png",
   "/imgs/nft-ham7.png",
   "/imgs/nft-ham8.png",
+  "/imgs/nft-ham9.png",
 ];
 export default function HeroSection({
   showPopup,
@@ -50,12 +52,22 @@ export default function HeroSection({
         {currentHam && (
           <motion.img
             style={{ x: yPosAnim, opacity }}
-            className="big-frank  pointer-events-none z-0"
+            className={
+              currentHam.includes("pack")
+                ? "hero-pack"
+                : "big-frank  pointer-events-none z-0"
+            }
             src={currentHam}
             alt="big ham"
           />
         )}
-        {currentHam && <img className=" big-frank-mob" src={currentHam} alt="big ham" />}
+        {currentHam && (
+          <img
+            className={currentHam.includes("pack") ? "hero-pack-mob" : "big-frank-mob"}
+            src={currentHam}
+            alt="big ham"
+          />
+        )}
       </div>
     </motion.div>
   );

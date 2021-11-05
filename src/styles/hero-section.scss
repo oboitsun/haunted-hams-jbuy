@@ -53,8 +53,20 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
+  .hero-pack {
+    display: none;
+  }
+  .hero-pack-mob {
+    padding-top: 40px;
+  }
   @media (min-width: 1024px) {
+    .hero-pack-mob {
+      display: none;
+    }
+    .hero-pack {
+      order: -1;
+      display: block;
+    }
     padding-top: 0;
 
     .custom-grid {

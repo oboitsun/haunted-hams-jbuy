@@ -15,6 +15,7 @@ import Ghost from "./components/Ghost";
 import Web from "./components/Web";
 import Roadmap2 from "./components/Roadmap2";
 import BuyButton from "./components/BuyButton";
+import RoadmapCircle from "./components/RoadmapCircle";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -62,6 +63,7 @@ export default function App() {
         <EndlessHamsters />
         <Web />
       </div>
+      {/* <RoadmapCircle /> */}
       <Roadmap2 />
       <RaritySlider />
       {/* <Roadmap /> */}

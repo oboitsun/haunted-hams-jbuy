@@ -46,7 +46,7 @@ const hams = [
     imgSrc: "/imgs/nft-ham8.png",
   },
   {
-    name: "Rockstar",
+    name: "Normal Hamster",
     imgSrc: "/imgs/nft-ham9.png",
   },
 ];
