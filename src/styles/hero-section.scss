@@ -31,7 +31,25 @@
   .join-discord {
     background: $dark-khaki;
   }
+  .mySwiper {
+    width: 90%;
+  }
 
+  #swiper-next2,
+  #swiper-prev2 {
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+  }
+  #swiper-next2 {
+    right: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #swiper-prev2 {
+    left: 0;
+    transform: translateX(50%) translateY(-50%) rotate(180deg);
+  }
   .big-frank {
     display: none;
     max-width: unset;
@@ -59,7 +77,11 @@
   .hero-pack-mob {
     padding-top: 40px;
   }
+
   @media (min-width: 1024px) {
+    .hero-slider {
+      order: -1;
+    }
     .hero-pack-mob {
       display: none;
     }

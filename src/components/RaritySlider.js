@@ -84,7 +84,7 @@ export default function RaritySlider() {
             <SwiperSlide key={i}>
               <div className="slide">
                 <p className="text-khaki text-4xl text-center font-fright">{ham.name}</p>
-                <img className="swiper-lazy" data-src={ham.imgSrc} alt={ham.name} />
+                <img className="swiper-lazy " data-src={ham.imgSrc} alt={ham.name} />
               </div>
             </SwiperSlide>
           ))}

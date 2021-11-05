@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/hero-section.scss";
 import WelcomeTo from "./WelcomeTo";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
+import HeroSlider from "./HeroSlider";
 const hams = [
   "/imgs/pack.png",
   "/imgs/nft-ham1.png",
@@ -42,25 +43,17 @@ export default function HeroSection({
           alt="bg"
         />
       )}
-      <div className="my-container relative z-10  lg:flex lg:justify-end">
+      <div className="my-container relative z-10  lg:flex lg:justify-end items-center">
         <WelcomeTo
           showPopup={showPopup}
           setShowPopup={setShowPopup}
           setUserAddress={setUserAddress}
           userAddress={userAddress}
         />
-        {currentHam && (
-          <motion.img
-            style={{ x: yPosAnim, opacity }}
-            className={
-              currentHam.includes("pack")
-                ? "hero-pack"
-                : "big-frank  pointer-events-none z-0"
-            }
-            src={currentHam}
-            alt="big ham"
-          />
-        )}
+        <div className="w-full lg:w-1/2 overflow-hidden hero-slider">
+          <HeroSlider />
+        </div>
+
         {currentHam && (
           <img
             className={currentHam.includes("pack") ? "hero-pack-mob" : "big-frank-mob"}
