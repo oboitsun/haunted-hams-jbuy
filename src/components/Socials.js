@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Socials({ big = false, modal = false }) {
   return (
-    <div className= {`flex gap-6 ${modal && "modal"}`}>
+    <div className={`flex gap-6 ${modal && "modal"}`}>
       <a
         className={`socials-icon ${big ? "w-10" : "w-5"}`}
         href="https://instagram.com/hauntedhamsters"
@@ -21,7 +21,7 @@ export default function Socials({ big = false, modal = false }) {
       </a>
       <a
         className={`socials-icon ${big ? "w-10" : "w-5"}`}
-        href="https://discord.gg/DtSF7SGK"
+        href="https://discord.com/invite/rngMQQxa"
       >
         <svg
           className="fill-current w-full"
