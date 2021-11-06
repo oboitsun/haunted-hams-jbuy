@@ -58,7 +58,12 @@ export default function Roadmap2() {
             <div className="absolute w-full h-full top-full left-0 bg-black"></div>
             <div className="absolute w-full h-full -top-2/3 left-0 bg-black"></div>
           </div>
-          <Heading>roadmap</Heading>
+          <div className="flex flex-col items-center">
+            <Heading>roadmap</Heading>
+            <button className="bg-crimson rounded-xl font-bold text-white uppercase px-4 py-2">
+              view full roadmap 2.0
+            </button>
+          </div>
           <div className="empty"></div>
           <div className="legend pr-5">{roadmap[2].text}</div>
           <div className="date-pumpkin">
