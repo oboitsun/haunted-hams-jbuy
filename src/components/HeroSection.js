@@ -15,6 +15,7 @@ const hams = [
   "/imgs/nft-ham8.png",
   "/imgs/nft-ham9.png",
 ];
+const backs = ["/imgs/bg.jpg", "/imgs/swamp.jpg", "/imgs/bg2.jpg"];
 export default function HeroSection({
   showPopup,
   setShowPopup,
@@ -25,8 +26,7 @@ export default function HeroSection({
   const [currentHam, setCurrentHam] = useState(null);
   const { scrollYProgress } = useViewportScroll();
   useEffect(() => {
-    console.log("rendered");
-    setCurrentImageBG(Math.random() > 0.5 ? "/imgs/bg.jpg" : "/imgs/bg2.jpg");
+    setCurrentImageBG(backs[Math.floor(Math.random() * backs.length)]);
     setCurrentHam(hams[Math.floor(Math.random() * hams.length)]);
   }, []);
   const yPosAnim = useTransform(scrollYProgress, [0, 0.5, 1], [0, -500, -900]);
