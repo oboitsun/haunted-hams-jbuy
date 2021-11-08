@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 // Core modules imports are same as usual
-import SwiperCore, { Autoplay, Navigation, Lazy } from "swiper";
+import SwiperCore, { Autoplay, Navigation } from "swiper";
 // Direct React component imports
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
 // Styles must use direct files imports
@@ -9,8 +9,7 @@ import "swiper/modules/navigation/navigation.scss"; // Navigation module
 import "swiper/modules/pagination/pagination.scss"; // Pagination module
 import "swiper/modules/effect-coverflow/effect-coverflow.scss";
 import "../styles/rarity-slider.scss";
-import Heading from "./Heading";
-import SubHeading from "./SubHeading";
+
 SwiperCore.use([Navigation, Autoplay]);
 const hams = [
   "/imgs/nft-ham1.png",
@@ -33,13 +32,14 @@ export default function HeroSlider() {
   }
   shuffle(hams);
   return (
-    <div className="w-full overflow-hidden  items-center flex">
+    <div id="hero-slider" className="w-full overflow-hidden  items-center flex">
       <div className="w-full relative overflow-hidden">
         <img id="swiper-next2" src="/imgs/slider-next.svg" alt="next slide" />
         <img id="swiper-prev2" src="/imgs/slider-next.svg" alt="next slide" />
         <Swiper
           // lazy={true}
           autoplay={{ delay: 2500 }}
+          speed={300}
           centeredSlides={true}
           slidesPerView={1}
           spaceBetween={0}
@@ -53,15 +53,7 @@ export default function HeroSlider() {
           {hams.map((ham, i) => (
             <SwiperSlide key={i}>
               <div className="slide">
-                <img
-                  className={
-                    ham.includes("pack")
-                      ? "w-3/4 flex items-center"
-                      : '"h-full w-full block"'
-                  }
-                  src={ham}
-                  alt="hero-hams"
-                />
+                <img className={"h-full w-full block"} src={ham} alt="hero-hams" />
               </div>
             </SwiperSlide>
           ))}

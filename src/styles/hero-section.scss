@@ -50,34 +50,16 @@
     left: 0;
     transform: translateX(50%) translateY(-50%) rotate(180deg);
   }
-  .big-frank {
-    display: none;
-    max-width: unset;
-
-    width: 120%;
-    max-width: 450px;
-    position: relative;
-    bottom: -10%;
-    left: 50%;
-    transform: translateX(-50%);
+  #hero-slider {
+    .swiper-slide {
+      opacity: 0;
+      transition: all 0.1s;
+    }
+    .swiper-slide-active {
+      transition: all 0.5s 0.1s;
+      opacity: 1;
+    }
   }
-  .big-frank-mob {
-    max-width: unset;
-
-    width: 120%;
-    max-width: 450px;
-    position: relative;
-    bottom: -10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .hero-pack {
-    display: none;
-  }
-  .hero-pack-mob {
-    padding-top: 40px;
-  }
-
   @media (min-width: 1024px) {
     .hero-slider {
       order: -1;

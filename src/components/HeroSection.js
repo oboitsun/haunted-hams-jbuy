@@ -38,7 +38,7 @@ export default function HeroSection({
     >
       {currentImgBG && (
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover opacity-50"
+          className="absolute w-full h-full bottom-0 left-0 object-cover opacity-70"
           src={currentImgBG}
           alt="bg"
         />
