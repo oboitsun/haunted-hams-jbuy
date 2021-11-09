@@ -8,7 +8,7 @@ export default function AboutHamsters() {
       <div className="my-container">
         <Heading>What is haunted hamsters</Heading>
         <SubHeading>
-          Haunted Hamsters are 2500 hamsters, who have been haunted on the hill of
+          Haunted Hamsters are 3333 hamsters, who have been haunted on the hill of
           Hamsterville. They come with various traits, and are now living on the
           blockchain ready to spook!
         </SubHeading>
