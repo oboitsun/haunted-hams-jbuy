@@ -45,11 +45,17 @@ export default function Header({
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center">
-          {links.map((l, i) => (
-            <Anchor key={i} to={l.href} {...linkProps}>
-              {l.text}
-            </Anchor>
-          ))}
+          {links.map((l, i) =>
+            l.text === "Portal" ? (
+              <a className="anchor text-white min-w-max" href={l.href}>
+                {l.text}
+              </a>
+            ) : (
+              <Anchor key={i} to={l.href} {...linkProps}>
+                {l.text}
+              </Anchor>
+            )
+          )}
           <Socials />
           <a href="#">
             <BuyButton />
