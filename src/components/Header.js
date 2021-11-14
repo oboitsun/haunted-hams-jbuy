@@ -25,7 +25,7 @@ export default function Header({
     { href: "about-us", text: "About Us" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    // { href: "market", text: "Market" },
+    { href: "https://hams-portal.vercel.app", text: "Portal" },
     { href: "faq", text: "FAQ" },
   ];
 
