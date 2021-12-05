@@ -21,7 +21,7 @@ export default function Socials({ big = false, modal = false }) {
       </a>
       <a
         className={`socials-icon ${big ? "w-10" : "w-5"}`}
-        href="https://discord.com/invite/rngMQQxa"
+        href="https://discord.gg/exfE77A68X"
       >
         <svg
           className="fill-current w-full"
