@@ -25,7 +25,7 @@ export default function Header({
     { href: "about-us", text: "About Us" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "https://portal.hauntedhamsters.io", text: "Portal" },
+    { href: "https://ml3ia-3aaaa-aaaak-aabfq-cai.raw.ic0.app/", text: "Portal" },
     { href: "faq", text: "FAQ" },
   ];
 
