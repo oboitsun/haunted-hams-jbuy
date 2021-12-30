@@ -25,7 +25,10 @@ export default function Header({
     { href: "about-us", text: "About Us" },
     { href: "team", text: "Team" },
     { href: "roadmap", text: "Roadmap" },
-    { href: "https://ml3ia-3aaaa-aaaak-aabfq-cai.raw.ic0.app/", text: "Portal" },
+    {
+      href: "https://ml3ia-3aaaa-aaaak-aabfq-cai.raw.ic0.app/",
+      text: "Portal",
+    },
     { href: "faq", text: "FAQ" },
   ];
 
@@ -38,7 +41,10 @@ export default function Header({
     className: "anchor text-white min-w-max",
   };
   return (
-    <div id="header" className={` ${scrolled ? "bg-black py-3 shadow-lg" : "py-7"}`}>
+    <div
+      id="header"
+      className={` ${scrolled ? "bg-black py-3 shadow-lg" : "py-7"}`}
+    >
       <div className="my-container justify-between flex items-center">
         <div>
           <Logo wide={true} />
@@ -57,9 +63,9 @@ export default function Header({
             )
           )}
           <Socials />
-          <a href="#">
+          <div>
             <BuyButton />
-          </a>
+          </div>
         </div>
       </div>
     </div>
