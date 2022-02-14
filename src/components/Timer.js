@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import TimerCountItem from "./TimerCountItem";
+import React, { useEffect, useState } from 'react';
+import TimerCountItem from './TimerCountItem';
 
-import { calculateTimeLeft } from "./utils";
+import { calculateTimeLeft } from './utils';
 export default function Timer() {
   const dayX = new Date(Date.UTC(2021, 10, 1, 0, 0, 0)).getTime();
   const today = Date.now();
 
   const [timeLeft, setTimeLeft] = useState({
-    hours: "0",
-    days: "0",
-    minutes: "0",
-    seconds: "0",
+    hours: '0',
+    days: '0',
+    minutes: '0',
+    seconds: '0',
   });
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Timer() {
     <div className=" flex items-center  mb-4 lg:mb-6 lg:mt-4">
       {dayX < today ? (
         <p className="font-fright text-xl lg:text-4xl text-white">
-          Collection of 3333 NFT's
+          Halloween Collection of 3333 NFT's
         </p>
       ) : (
         <>
