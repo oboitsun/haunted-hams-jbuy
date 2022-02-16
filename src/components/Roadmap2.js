@@ -1,34 +1,34 @@
-import React from "react";
-import "../styles/roadmap2.scss";
-import Heading from "./Heading";
+import React from 'react';
+import '../styles/roadmap2.scss';
+import Heading from './Heading';
 
 const roadmap = [
   {
-    direction: "ltr",
-    month: "SEP ",
+    direction: 'ltr',
+    month: 'SEP ',
     text: `The vision of Haunted Hamsters begins, and preparation for the project is
     underway.`,
   },
 
   {
-    direction: "ltr",
-    month: "OCT ",
+    direction: 'ltr',
+    month: 'OCT ',
     text: `Development, design is underway for the project and the first set of
     Hamsters start to be minted!`,
   },
   {
-    direction: "rtl",
-    month: "NOV ",
+    direction: 'rtl',
+    month: 'NOV ',
     text: `Trading on the secondary marketplace begins - users can buy and sell Haunted Hamsters there.`,
   },
   {
-    direction: "rtl",
-    month: "Dec ",
+    direction: 'rtl',
+    month: 'Dec ',
     text: `Hamsters are spooking the ICP blockchain!`,
   },
   {
-    direction: "ltr",
-    month: "Jan ",
+    direction: 'ltr',
+    month: 'Jan ',
     text: `Potential future development, airdrops, rewards for holders and potential game (if demand) is in the works.`,
   },
 ];
@@ -60,9 +60,9 @@ export default function Roadmap2() {
           </div>
           <div className="flex flex-col items-center">
             <Heading>roadmap</Heading>
-            <button className="bg-crimson rounded-xl font-bold text-white uppercase px-4 py-2">
+            {/* <button className="bg-crimson rounded-xl font-bold text-white uppercase px-4 py-2">
               view full roadmap 2.0
-            </button>
+            </button> */}
           </div>
           <div className="empty"></div>
           <div className="legend pr-5">{roadmap[2].text}</div>
@@ -89,14 +89,18 @@ export default function Roadmap2() {
           <div className="w-full h-full relative overflow-hidden">
             <div className="pivot-bottom"></div>
           </div>
-        </div>{" "}
+        </div>{' '}
       </div>
       <div className="my-container roadmap2 lg:hidden block">
         <Heading>roadmap</Heading>
         <div className="grid  grid-cols-1 auto-rows-auto place-items-center gap-y-1">
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
+              <img
+                className="block w-full"
+                src="/imgs/moon.png"
+                alt="pumpkin"
+              />
               <div className="date font-fright">{roadmap[0].month}</div>
             </div>
           </div>
@@ -105,7 +109,11 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
+              <img
+                className="block w-full"
+                src="/imgs/moon.png"
+                alt="pumpkin"
+              />
               <div className="date font-fright">{roadmap[1].month}</div>
             </div>
           </div>
@@ -114,7 +122,11 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
+              <img
+                className="block w-full"
+                src="/imgs/moon.png"
+                alt="pumpkin"
+              />
               <div className="date font-fright">{roadmap[2].month}</div>
             </div>
           </div>
@@ -123,7 +135,11 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
+              <img
+                className="block w-full"
+                src="/imgs/moon.png"
+                alt="pumpkin"
+              />
               <div className="date font-fright">{roadmap[3].month}</div>
             </div>
           </div>
@@ -132,7 +148,11 @@ export default function Roadmap2() {
 
           <div className="w-1/2 mx-auto">
             <div className="date-pumpkin ">
-              <img className="block w-full" src="/imgs/moon.png" alt="pumpkin" />
+              <img
+                className="block w-full"
+                src="/imgs/moon.png"
+                alt="pumpkin"
+              />
               <div className="date font-fright">{roadmap[4].month}</div>
             </div>
           </div>

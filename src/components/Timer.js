@@ -26,7 +26,7 @@ export default function Timer() {
     <div className=" flex items-center  mb-4 lg:mb-6 lg:mt-4">
       {dayX < today ? (
         <p className="font-fright text-xl lg:text-4xl text-white">
-          Halloween Collection of 3333 NFT's
+          Surprise NFT collection for Halloween 2021
         </p>
       ) : (
         <>
