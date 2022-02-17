@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Burger from "./Burger";
-import Logo from "./Logo";
-import { Link as Anchor } from "react-scroll";
-import "../styles/header.scss";
-import Button from "./Button";
-import Socials from "./Socials";
-import ConnectWallet from "./ConnectWallet";
-import BuyButton from "./BuyButton";
+import React, { useEffect, useState } from 'react';
+import Burger from './Burger';
+import Logo from './Logo';
+import { Link as Anchor } from 'react-scroll';
+import '../styles/header.scss';
+import Button from './Button';
+import Socials from './Socials';
+import ConnectWallet from './ConnectWallet';
+import BuyButton from './BuyButton';
 
 export default function Header({
   showPopup,
@@ -22,14 +22,14 @@ export default function Header({
     window && setRendered(true);
   }, []);
   const links = [
-    { href: "about-us", text: "About Us" },
-    { href: "team", text: "Team" },
-    { href: "roadmap", text: "Roadmap" },
+    { href: 'about-us', text: 'About Us' },
+    // { href: "team", text: "Team" },
+    // { href: "roadmap", text: "Roadmap" },
     {
-      href: "https://ml3ia-3aaaa-aaaak-aabfq-cai.raw.ic0.app/",
-      text: "Portal",
+      href: 'https://ml3ia-3aaaa-aaaak-aabfq-cai.raw.ic0.app/',
+      text: 'Portal',
     },
-    { href: "faq", text: "FAQ" },
+    // { href: "faq", text: "FAQ" },
   ];
 
   const linkProps = {
@@ -37,13 +37,13 @@ export default function Header({
     smooth: true,
     offset: -100,
     duration: 500,
-    activeClass: "active",
-    className: "anchor text-white min-w-max",
+    activeClass: 'active',
+    className: 'anchor text-white min-w-max',
   };
   return (
     <div
       id="header"
-      className={` ${scrolled ? "bg-black py-3 shadow-lg" : "py-7"}`}
+      className={` ${scrolled ? 'bg-black py-3 shadow-lg' : 'py-7'}`}
     >
       <div className="my-container justify-between flex items-center">
         <div>
@@ -52,7 +52,7 @@ export default function Header({
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center">
           {links.map((l, i) =>
-            l.text === "Portal" ? (
+            l.text === 'Portal' ? (
               <a className="anchor text-white min-w-max" href={l.href}>
                 {l.text}
               </a>

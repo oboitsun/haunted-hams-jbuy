@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
-import FAQ from "./components/FAQ";
-import "./styles/common.scss";
-import HeroSection from "./components/HeroSection";
-import EndlessHamsters from "./components/EndlessHamsters";
-import Team from "./components/Team";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ModalMenu from "./components/ModalMenu";
-import ComingSoonPopUp from "./components/ComingSoonPopUp";
-import RaritySlider from "./components/RaritySlider";
-import AboutHamsters from "./components/AboutHamsters";
-import Roadmap from "./components/Roadmap";
-import Ghost from "./components/Ghost";
-import Web from "./components/Web";
-import Roadmap2 from "./components/Roadmap2";
-import BuyButton from "./components/BuyButton";
-import RoadmapCircle from "./components/RoadmapCircle";
+import React, { useState, useEffect } from 'react';
+import FAQ from './components/FAQ';
+import './styles/common.scss';
+import HeroSection from './components/HeroSection';
+import EndlessHamsters from './components/EndlessHamsters';
+import Team from './components/Team';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ModalMenu from './components/ModalMenu';
+import ComingSoonPopUp from './components/ComingSoonPopUp';
+import RaritySlider from './components/RaritySlider';
+import AboutHamsters from './components/AboutHamsters';
+import Roadmap from './components/Roadmap';
+import Ghost from './components/Ghost';
+import Web from './components/Web';
+import Roadmap2 from './components/Roadmap2';
+import BuyButton from './components/BuyButton';
+import RoadmapCircle from './components/RoadmapCircle';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,14 +27,14 @@ export default function App() {
 
   //scrolling listener
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   });
   //connect wallet functions
-  const [userAddress, setUserAddress] = useState("");
+  const [userAddress, setUserAddress] = useState('');
   const [showPopup, setShowPopup] = useState(false);
   return (
     <div className=" relative overflow-hidden app">
@@ -64,12 +64,12 @@ export default function App() {
         <Web />
       </div>
       {/* <RoadmapCircle /> */}
-      <Roadmap2 />
+      {/* <Roadmap2 /> */}
       <RaritySlider />
       {/* <Roadmap /> */}
-      <Team />
+      {/* <Team /> */}
 
-      <FAQ />
+      {/* <FAQ /> */}
 
       <div className="w-full lg:w-4/5 max-w-md mx-auto pb-5">
         <BuyButton big />
