@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import "../styles/hero-section.scss";
-import WelcomeTo from "./WelcomeTo";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
-import HeroSlider from "./HeroSlider";
+import React, { useEffect, useState } from 'react';
+import '../styles/hero-section.scss';
+import WelcomeTo from './WelcomeTo';
+import { motion, useTransform, useViewportScroll } from 'framer-motion';
+import HeroSlider from './HeroSlider';
 const hams = [
-  "/imgs/pack.png",
-  "/imgs/nft-ham1.png",
-  "/imgs/nft-ham2.png",
-  "/imgs/nft-ham3.png",
-  "/imgs/nft-ham4.png",
-  "/imgs/nft-ham5.png",
-  "/imgs/nft-ham6.png",
-  "/imgs/nft-ham7.png",
-  "/imgs/nft-ham8.png",
-  "/imgs/nft-ham9.png",
+  '/imgs/pack.png',
+  '/imgs/nft-ham1.png',
+  '/imgs/nft-ham2.png',
+  '/imgs/nft-ham3.png',
+  '/imgs/nft-ham4.png',
+  '/imgs/nft-ham5.png',
+  '/imgs/nft-ham6.png',
+  '/imgs/nft-ham7.png',
+  '/imgs/nft-ham8.png',
+  '/imgs/nft-ham9.png',
 ];
-const backs = ["/imgs/bg.jpg", "/imgs/swamp.jpg", "/imgs/bg2.jpg"];
+const backs = ['/imgs/bg.jpg', '/imgs/swamp.jpg', '/imgs/bg2.jpg'];
 export default function HeroSection({
   showPopup,
   setShowPopup,
@@ -54,13 +54,13 @@ export default function HeroSection({
           <HeroSlider />
         </div>
 
-        {currentHam && (
+        {/* {currentHam && (
           <img
             className={currentHam.includes("pack") ? "hero-pack-mob" : "big-frank-mob"}
             src={currentHam}
             alt="big ham"
           />
-        )}
+        )} */}
       </div>
     </motion.div>
   );

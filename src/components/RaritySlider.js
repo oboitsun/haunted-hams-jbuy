@@ -10,8 +10,8 @@ import 'swiper/modules/pagination/pagination.scss'; // Pagination module
 import 'swiper/modules/effect-coverflow/effect-coverflow.scss';
 import '../styles/rarity-slider.scss';
 import Heading from './Heading';
-import SubHeading from './SubHeading';
-SwiperCore.use([Navigation, Autoplay, Lazy]);
+
+SwiperCore.use([Navigation, Autoplay]);
 const hams = [
   {
     name: 'Clown',
@@ -68,7 +68,6 @@ export default function RaritySlider() {
         <img id="swiper-next" src="/imgs/slider-next.svg" alt="next slide" />
         <img id="swiper-prev" src="/imgs/slider-next.svg" alt="next slide" />
         <Swiper
-          lazy={true}
           autoplay={{ delay: 2500 }}
           centeredSlides={true}
           slidesPerView={isMobile ? 1 : 3}
@@ -86,11 +85,7 @@ export default function RaritySlider() {
                 <p className="text-khaki text-4xl text-center font-fright">
                   {ham.name}
                 </p>
-                <img
-                  className="swiper-lazy "
-                  data-src={ham.imgSrc}
-                  alt={ham.name}
-                />
+                <img className=" " src={ham.imgSrc} alt={ham.name} />
               </div>
             </SwiperSlide>
           ))}

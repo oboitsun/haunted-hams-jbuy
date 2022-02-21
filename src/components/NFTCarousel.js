@@ -1,13 +1,13 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 export default function NFTCarousel() {
   const nfts = [
-    "/imgs/franken-big.png",
-    "/imgs/rockstar-ham.png",
-    "/imgs/nft-ham1.png",
-    "/imgs/nft-ham2.png",
-    "/imgs/nft-ham3.png",
-    "/imgs/nft-ham4.png",
+    '/imgs/nft-ham7.png',
+    '/imgs/nft-ham9.png',
+    '/imgs/nft-ham1.png',
+    '/imgs/nft-ham2.png',
+    '/imgs/nft-ham3.png',
+    '/imgs/nft-ham4.png',
   ];
   return (
     <div className="relative w-full">
@@ -18,8 +18,8 @@ export default function NFTCarousel() {
           animate={{ opacity: [0, 1, 0] }}
           transition={{
             duration: 3,
-            repeat: "Infinity",
-            repeatType: "loop",
+            repeat: 'Infinity',
+            repeatType: 'loop',
             delay: i * 3,
             repeatDelay: nfts.length * 3 - 3,
           }}
