@@ -1,10 +1,10 @@
-import React from "react";
-import Button from "./Button";
-import { motion } from "framer-motion";
-import Timer from "./Timer";
+import React from 'react';
+import Button from './Button';
+import { motion } from 'framer-motion';
+import Timer from './Timer';
 // import dynamic from "next/dynamic";
-import ConnectWallet from "./ConnectWallet";
-import BuyButton from "./BuyButton";
+import ConnectWallet from './ConnectWallet';
+import BuyButton from './BuyButton';
 // const DynamicComponent = dynamic(() => import("./ConnectWallet"), { ssr: false });
 export default function WelcomeTo({
   setShowPopup,
@@ -21,10 +21,15 @@ export default function WelcomeTo({
   };
   const item = {
     show: { x: 0, opacity: 1, transition: { duration: 0.3 } },
-    hidden: { x: "-60vw", opacity: 0, transition: { duration: 1 } },
+    hidden: { x: '-60vw', opacity: 0, transition: { duration: 1 } },
   };
   return (
-    <motion.div variants={cont} initial="hidden" animate="show" className="welcome-to ">
+    <motion.div
+      variants={cont}
+      initial="hidden"
+      animate="show"
+      className="welcome-to "
+    >
       <motion.p variants={item} key={1} className="title  font-fright">
         Welcome to
       </motion.p>
@@ -44,9 +49,9 @@ export default function WelcomeTo({
           <BuyButton big />
         </div>
         <div className="flex items-center mx-auto">
-          <a href="https://discord.gg/exfE77A68X">
+          {/* <a href="https://discord.gg/exfE77A68X">
             <button className="btn join-discord w-full"> Join The Discord</button>
-          </a>
+          </a> */}
           <img
             className="block max-w-min ml-5  lg:ml-4 "
             src="/imgs/dfinity.png"

@@ -48,7 +48,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
       animate={showMenu ? 'show' : 'hidden'}
       className={`modal-menu ${showMenu ? '' : 'pointer-events-none'}`}
     >
-      {links.map((l, i) => (
+      {/* {links.map((l, i) => (
         <motion.div key={i} className="text-3xl mb-5">
           <Anchor
             onClick={() => {
@@ -60,7 +60,7 @@ export default function ModalMenu({ showMenu, setShowMenu }) {
             {l.text}
           </Anchor>
         </motion.div>
-      ))}
+      ))} */}
       <motion.div key={11} className="">
         <BuyButton />
       </motion.div>

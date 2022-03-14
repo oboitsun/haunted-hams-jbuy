@@ -8,9 +8,9 @@ export default function AboutHamsters() {
       <div className="my-container">
         <Heading>What is haunted hamsters</Heading>
         <SubHeading>
-          Haunted Hamsters are 3333 hamsters, who have been haunted on the hill
-          of Hamsterville. They have 10 spooky traits and were dropped on
-          Halloween 2021 as a stealth NFT drop on Entrepot.
+          Haunted Hamsters is a Halloween NFT collection of 3333 hamsters
+          dropped on October 31st 2021 on Entrepot. They have 10 spooky traits
+          and were dropped as a surprise collectible before Halloween.
         </SubHeading>
       </div>
     </div>

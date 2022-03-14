@@ -51,7 +51,7 @@ export default function Header({
         </div>
         <Burger showMenu={showMenu} setShowMenu={setShowMenu} />
         <div className="hidden lg:flex text-xs xl:text-base font-bold lg:gap-6   xl:gap-10 items-center">
-          {links.map((l, i) =>
+          {/* {links.map((l, i) =>
             l.text === 'Portal' ? (
               <a className="anchor text-white min-w-max" href={l.href}>
                 {l.text}
@@ -61,7 +61,7 @@ export default function Header({
                 {l.text}
               </Anchor>
             )
-          )}
+          )} */}
           <Socials />
           <div>
             <BuyButton />

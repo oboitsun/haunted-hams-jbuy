@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export default function Socials({ big = false, modal = false }) {
   return (
-    <div className={`flex gap-6 ${modal && "modal"}`}>
-      <a
+    <div className={`flex gap-6 ${modal && 'modal'}`}>
+      {/* <a
         className={`socials-icon ${big ? "w-10" : "w-5"}`}
         href="https://instagram.com/hauntedhamsters"
       >
@@ -18,9 +18,9 @@ export default function Socials({ big = false, modal = false }) {
             fill="current"
           />
         </svg>
-      </a>
+      </a> */}
       <a
-        className={`socials-icon ${big ? "w-10" : "w-5"}`}
+        className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
         href="https://discord.gg/exfE77A68X"
       >
         <svg
@@ -38,7 +38,7 @@ export default function Socials({ big = false, modal = false }) {
         </svg>
       </a>
       <a
-        className={`socials-icon ${big ? "w-10" : "w-5"}`}
+        className={`socials-icon ${big ? 'w-10' : 'w-5'}`}
         href="http://twitter.com/hauntedhamsters"
       >
         <svg
